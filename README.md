@@ -5,7 +5,6 @@
 - There are a variety of characteristics that allow us to distinguish between different genres, which makes music production very complex.
 - It looked fun and I wanted to learn more about sound and signal processing. 
 					
-
 ## Goals		
 - Identify music genres based on audio features so that audio streaming companies can place useful recommendations for customers and create a genre filter on their platforms.
 - Make music composition easier. 
@@ -69,10 +68,21 @@ Data augmentation was performed by:
 - The deep learning model got interesting results for new pop songs. In fact, it firstly guessed the genre of 'Sorry' by Madonna - which wasn't achieved by the SVC and LR models. On top of that, even though Michael Jackson is the King of Pop, a lot of his songs are also classified as disco. 'Thriller' is classified as pop by Google but as disco by Wikipedia. The DL model guess was closer to the classification of Wikipedia but interestingly pop comes as the second genre with the highest contribution.
 
 ## Conclusion
+- My first analysis of the GTZAN dataset didn’t use data augmentation or a deep learning model. On top of that, the original dataset was created by someone else and I later added more features to this dataset. However, the problem with the latter is that we might have used different characteristics to build our features. 
+- The limitations of my first analysis pushed me to use data augmentation which improved the cross validated scores of the SVC and LR models. I also used a simple deep learning model to check if it performed better than the machine learning models. The simple deep learning model accuracy was better than that of LR but worse than SVC. Moreover, I created a dataset from scratch to get consistent data. 
+- As mentioned earlier the best results were obtained by the SVC algorithm, which correctly predicted the labels of new disco, classical, metal, jazz and reggae songs. The deep learning model got interesting results for new pop songs. More data is needed for blues, rock, country and hip- hop.
 
 ## Key learnings
+- Data augmentation improved the cross validated mean scores but didn’t change the test scores by much. It also didn’t decrease the training scores.
+Using a high number of MFCCs slightly improved my scores since most of the information is contained in the first order coefficients.
+- Creating my own dataframe from scratch was very useful as it allowed me to have complete control of my data and I also used my feature engineering to test my models on new songs.
+- SVC is a very powerful algorithm when it comes to multi-class classification.
 
 ## Next steps
+- Check whether removing outliers improves my scores.
+- Analyse all features extracted - I only analysed MFCCs and chroma.
+- Add a convolutional layer to my deep learning model and see if the accuracy improves.
+- Add more hip-hop, rock, blues and country songs so that my models can do better at guessing their label. 
 
 ## How to run the project
 Python as well as the following libraries are required to run the project: 
