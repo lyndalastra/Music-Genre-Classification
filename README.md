@@ -50,11 +50,24 @@
 
 <p align="center"><img width="617" alt="Screenshot 2021-07-14 at 11 15 07" src="https://user-images.githubusercontent.com/66631458/125605450-6244da85-8ddd-4681-98c3-88de3520ef7c.png"></p>
 
-## Data augmentation:
+## Data augmentation
 Data augmentation was performed by:
 - Adding noise to the signal. White noises are random samples distributed at regular intervals with mean of 0 and standard deviation of 1.
 - Shifting time, i.e. moving the waveform to the right by sample_rate/10 factor along the time axis.
 - Shifting pitch by 5 steps. 
+
+## Modelling (Deep Learning)
+- The Rectified Linear Unit (ReLU) activation function was used in hidden layers because of its computational simplicity, while the Softmax was used in the output layer because it can solve multiclass classification problems.  
+- The Deep Learning model had a test score of 72.00, higher than Logistic Regression but lower than SVC. 
+
+<img width="1111" alt="DL test score" src="https://user-images.githubusercontent.com/66631458/125606113-59f71f4c-68ed-46b1-b936-dea7e2a9b01e.png">
+
+## Testing on new data
+- All models correctly predicted the labels of new classical and disco songs. 
+- LR and SVC also managed to get the genre of new metal songs. 
+- SVC did well at guessing jazz and reggae. 
+- The deep learning model got interesting results for new pop songs. In fact, it firstly guessed the genre of 'Sorry' by Madonna - which wasn't achieved by the SVC and LR models. On top of that, even though Michael Jackson is the King of Pop, a lot of his songs are also classified as disco. 'Thriller' is classified as pop by Google but as disco by Wikipedia. The DL model guess was closer to the classification of Wikipedia but interestingly pop comes as the second genre with the highest contribution.
+
 
 
 
