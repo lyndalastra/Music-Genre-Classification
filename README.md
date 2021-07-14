@@ -16,7 +16,7 @@
 - Music composers can produce music for the right target audience. 
 	
 ## Data
-- Source: http://marsyas.info/downloads/datasets.html	 	 			
+- **Source:** http://marsyas.info/downloads/datasets.html	 	 			
 - The dataset consists of 1000 audio tracks, each 30 seconds long. It contains 10 genres, each represented by 100 tracks. The tracks are all in .wav format.
 				
 ## Overall approach
@@ -30,7 +30,7 @@
 ## Feature engineering				
 - 97 features were extracted from audio files, mainly: chroma stft, chroma cqt, chroma cens, rms, spectral centroid, spectral contrast, spectral bandwidth, spectral rolloff, spectral flatness, poly features, tonnetz, zero crossing rate and 40 mfccs.
 - Even though lower order mfccs contain most of the information about the waveform, I decided to extract 40 of them to add more complexity to my models. 
-- Note: each chroma has 12 bins and spectral contrast 7 of them
+- **Note:** each chroma has 12 bins and spectral contrast 7 of them
 
 ## EDA					
 - My EDA consisted in analysing the audio files downloaded from Marsyas, explaining complex concepts of sound (we went through some of them earlier) and visualising individual features as well as the correlation between them.				
