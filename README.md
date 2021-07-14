@@ -68,6 +68,24 @@ Data augmentation was performed by:
 - SVC did well at guessing jazz and reggae. 
 - The deep learning model got interesting results for new pop songs. In fact, it firstly guessed the genre of 'Sorry' by Madonna - which wasn't achieved by the SVC and LR models. On top of that, even though Michael Jackson is the King of Pop, a lot of his songs are also classified as disco. 'Thriller' is classified as pop by Google but as disco by Wikipedia. The DL model guess was closer to the classification of Wikipedia but interestingly pop comes as the second genre with the highest contribution.
 
+## Conclusion
+
+## Key learnings
+
+## Next steps
+
+## How to run the project
+Python as well as the following libraries are required to run the project: 
+- Pandas,
+- Numpy,
+- Seaborn,
+- Matplotlib,
+- Scikit-Learn,
+- Scikit-plot,
+- Librosa,
+- TensorFlow,
+- Keras.
+
 
 
 
