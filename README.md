@@ -43,3 +43,11 @@
 
 <img width="1204" alt="LR model" src="https://user-images.githubusercontent.com/66631458/125605214-ddc0362a-2bce-4374-86f7-2d3206079192.png">
 
+<img width="1204" alt="SVC model" src="https://user-images.githubusercontent.com/66631458/125605350-7ba0ad60-1218-4a77-892e-db22d0b28f7d.png">
+
+- As mentioned in the EDA, my LR model has demonstrated that MFCCs are the most important features for music genre prediction. The feature importances couldn’t be computed with SVC because of the complexity of interpretation of dual coefficients and support vectors.	
+- The test set confusion matrix of my LR and SVC models have both shown that classical has the most true positives. 
+
+<img width="617" alt="Screenshot 2021-07-14 at 11 15 07" src="https://user-images.githubusercontent.com/66631458/125605450-6244da85-8ddd-4681-98c3-88de3520ef7c.png">
+
+
