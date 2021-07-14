@@ -50,4 +50,11 @@
 
 <p align="center"><img width="617" alt="Screenshot 2021-07-14 at 11 15 07" src="https://user-images.githubusercontent.com/66631458/125605450-6244da85-8ddd-4681-98c3-88de3520ef7c.png"></p>
 
+## Data augmentation:
+Data augmentation was performed by:
+- Adding noise to the signal. White noises are random samples distributed at regular intervals with mean of 0 and standard deviation of 1.
+- Shifting time, i.e. moving the waveform to the right by sample_rate/10 factor along the time axis.
+- Shifting pitch by 5 steps. 
+
+
 
