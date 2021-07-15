@@ -40,14 +40,14 @@
 ## Modelling (Machine Learning)
 - I chose Logistic Regression (LR) and Support Vector Classifier (SVC) to build my classification models. LR is a low-variance, high-bias algorithm; while, SVC is a high-variance, low-bias one. Using algorithms with different bias and variance allowed me to see if the scores obtained were very different. I also chose SVC because it is regarded as one of the best multi-class classification algorithms. The test scores of both models weren’t differing by much. LR had a test score of 0.695, while SVC’s test score was 0.735. However, there was a large gap between the training and cross validated mean scores. LR’s training score was 0.861, while SVC’s was 0.966. Similarly, the cross validated mean score of SVC was much higher than that of LR, 0.887 and 0.770 respectively. We can see that overall, SVC is performing better than LR.
 
-<img width="800" alt="LR model" src="https://user-images.githubusercontent.com/66631458/125605214-ddc0362a-2bce-4374-86f7-2d3206079192.png">
+<p align="center"><img width="800" alt="LR model" src="https://user-images.githubusercontent.com/66631458/125605214-ddc0362a-2bce-4374-86f7-2d3206079192.png"></p>
 
-<img width="800" alt="SVC model" src="https://user-images.githubusercontent.com/66631458/125605350-7ba0ad60-1218-4a77-892e-db22d0b28f7d.png">
+<p align="center"><img width="800" alt="SVC model" src="https://user-images.githubusercontent.com/66631458/125605350-7ba0ad60-1218-4a77-892e-db22d0b28f7d.png"></p>
 
 - As mentioned in the EDA, my LR model has demonstrated that MFCCs are the most important features for music genre prediction. The feature importances couldn’t be computed with SVC because of the complexity of interpretation of dual coefficients and support vectors.	
 - The test set confusion matrix of my LR and SVC models have both shown that classical has the most true positives. 
 
-<p align="center"><img width="617" alt="Screenshot 2021-07-14 at 11 15 07" src="https://user-images.githubusercontent.com/66631458/125605450-6244da85-8ddd-4681-98c3-88de3520ef7c.png"></p>
+<p align="center"><img width="700" alt="Screenshot 2021-07-14 at 11 15 07" src="https://user-images.githubusercontent.com/66631458/125605450-6244da85-8ddd-4681-98c3-88de3520ef7c.png"></p>
 
 ## Data augmentation
 Data augmentation was performed by:
@@ -59,7 +59,7 @@ Data augmentation was performed by:
 - The Rectified Linear Unit (ReLU) activation function was used in hidden layers because of its computational simplicity, while the Softmax was used in the output layer because it can solve multiclass classification problems.  
 - The Deep Learning model had a test score of 72.00, higher than Logistic Regression but lower than SVC. 
 
-<img width="1111" alt="DL test score" src="https://user-images.githubusercontent.com/66631458/125606113-59f71f4c-68ed-46b1-b936-dea7e2a9b01e.png">
+<p align="center"><img width="800" alt="DL test score" src="https://user-images.githubusercontent.com/66631458/125606113-59f71f4c-68ed-46b1-b936-dea7e2a9b01e.png"></p>
 
 ## Testing on new data
 - All models correctly predicted the labels of new classical and disco songs. 
