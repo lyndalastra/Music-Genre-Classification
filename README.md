@@ -40,9 +40,9 @@
 ## Modelling (Machine Learning)
 - I chose Logistic Regression (LR) and Support Vector Classifier (SVC) to build my classification models. LR is a low-variance, high-bias algorithm; while, SVC is a high-variance, low-bias one. Using algorithms with different bias and variance allowed me to see if the scores obtained were very different. I also chose SVC because it is regarded as one of the best multi-class classification algorithms. The test scores of both models weren’t differing by much. LR had a test score of 0.695, while SVC’s test score was 0.735. However, there was a large gap between the training and cross validated mean scores. LR’s training score was 0.861, while SVC’s was 0.966. Similarly, the cross validated mean score of SVC was much higher than that of LR, 0.887 and 0.770 respectively. We can see that overall, SVC is performing better than LR.
 
-<img width="1204" alt="LR model" src="https://user-images.githubusercontent.com/66631458/125605214-ddc0362a-2bce-4374-86f7-2d3206079192.png">
+<img width="800" alt="LR model" src="https://user-images.githubusercontent.com/66631458/125605214-ddc0362a-2bce-4374-86f7-2d3206079192.png">
 
-<img width="1204" alt="SVC model" src="https://user-images.githubusercontent.com/66631458/125605350-7ba0ad60-1218-4a77-892e-db22d0b28f7d.png">
+<img width="800" alt="SVC model" src="https://user-images.githubusercontent.com/66631458/125605350-7ba0ad60-1218-4a77-892e-db22d0b28f7d.png">
 
 - As mentioned in the EDA, my LR model has demonstrated that MFCCs are the most important features for music genre prediction. The feature importances couldn’t be computed with SVC because of the complexity of interpretation of dual coefficients and support vectors.	
 - The test set confusion matrix of my LR and SVC models have both shown that classical has the most true positives. 
