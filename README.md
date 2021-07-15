@@ -57,11 +57,10 @@ Data augmentation was performed by:
 
 ## Modelling (Deep Learning)
 - The Rectified Linear Unit (ReLU) activation function was used in hidden layers because of its computational simplicity, while the Softmax was used in the output layer because it can solve multiclass classification problems.  
-- The Deep Learning model had a test score of 72.00, higher than Logistic Regression but lower than SVC. 
+- The Deep Learning model had a test score of 72.00, higher than Logistic Regression but lower than SVC.   
 
-$~~~~~~~~~~~$
 <p align="center"><img width="800" alt="DL test score" src="https://user-images.githubusercontent.com/66631458/125606113-59f71f4c-68ed-46b1-b936-dea7e2a9b01e.png"></p>
-$~~~~~~~~~~~$
+
 
 ## Testing on new data
 - All models correctly predicted the labels of new classical and disco songs. 
